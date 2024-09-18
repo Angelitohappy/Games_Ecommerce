@@ -4,7 +4,7 @@ require_once __DIR__ . '/../classes/articulos.php';
 
 function obtenerArticulos(): array
 {
-    $rutaAlArchivo = __DIR__ . '/../data/articulos.json';
+    $rutaAlArchivo = __DIR__ . '/../json/games.json';
     $registros = json_decode(file_get_contents($rutaAlArchivo), true);
 
     $salida = [];

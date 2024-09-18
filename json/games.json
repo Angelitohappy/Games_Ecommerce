@@ -1,0 +1,138 @@
+[
+    {
+        "articulo_id": 1,
+        "titulo": "Elden Ring",
+        "descripcion": "",
+        "precio": "$2300",
+        "imagen": "elden_ring.jpg",
+        "imagen_descripcion": "Foto de Elden Ring"
+    },
+    {
+        "articulo_id": 2,
+        "titulo": "Dark Souls I",
+        "descripcion": "Un juego de rol de acción conocido por su dificultad.",
+        "precio": "$2500",
+        "imagen": "dark_souls_i.jpg",
+        "imagen_descripcion": "Portada de Dark Souls I"
+    },
+    {
+        "articulo_id": 3,
+        "titulo": "Dark Souls II",
+        "descripcion": "La secuela del aclamado Dark Souls.",
+        "precio": "$2300",
+        "imagen": "dark_souls_ii.jpg",
+        "imagen_descripcion": "Portada de Dark Souls II"
+    },
+    {
+        "articulo_id": 4,
+        "titulo": "Dark Souls III",
+        "descripcion": "La conclusión de la trilogía Dark Souls.",
+        "precio": "$2300",
+        "imagen": "dark_souls_iii.jpg",
+        "imagen_descripcion": "Portada de Dark Souls III"
+    },
+    {
+        "articulo_id": 5,
+        "titulo": "Red Dead Redemption II",
+        "descripcion": "Un juego de acción y aventura en un mundo abierto.",
+        "precio": "$2300",
+        "imagen": "red_dead_redemption_ii.jpg",
+        "imagen_descripcion": "Portada de Red Dead Redemption II"
+    },
+    {
+        "articulo_id": 6,
+        "titulo": "BioShock I",
+        "descripcion": "Un juego de disparos en primera persona en un mundo submarino.",
+        "precio": "$2300",
+        "imagen": "bioshock_i.jpg",
+        "imagen_descripcion": "Portada de BioShock I"
+    },
+    {
+        "articulo_id": 7,
+        "titulo": "BioShock II",
+        "descripcion": "La secuela del aclamado BioShock.",
+        "precio": "$2300",
+        "imagen": "bioshock_ii.jpg",
+        "imagen_descripcion": "Portada de BioShock II"
+    },
+    {
+        "articulo_id": 8,
+        "titulo": "BioShock Infinite",
+        "descripcion": "Un juego de disparos en primera persona ambientado en el cielo.",
+        "precio": "$2300",
+        "imagen": "bioshock_infinite.jpg",
+        "imagen_descripcion": "Portada de BioShock Infinite"
+    },
+    {
+        "articulo_id": 9,
+        "titulo": "Borderlands I",
+        "descripcion": "Un juego de rol de disparos con estilo cel-shading.",
+        "precio": "$2300",
+        "imagen": "borderlands_i.jpg",
+        "imagen_descripcion": "Portada de Borderlands I"
+    },
+    {
+        "articulo_id": 10,
+        "titulo": "Borderlands II",
+        "descripcion": "La secuela de Borderlands con más acción y locura.",
+        "precio": "$2300",
+        "imagen": "borderlands_ii.jpg",
+        "imagen_descripcion": "Portada de Borderlands II"
+    },
+    {
+        "articulo_id": 11,
+        "titulo": "Borderlands: The Pre-Sequel",
+        "descripcion": "Una historia entre Borderlands 1 y 2.",
+        "precio": "$2300",
+        "imagen": "borderlands_pre_sequel.jpg",
+        "imagen_descripcion": "Portada de Borderlands: The Pre-Sequel"
+    },
+    {
+        "articulo_id": 12,
+        "titulo": "Fallout 1",
+        "descripcion": "Un RPG post-apocalíptico clásico.",
+        "precio": "$2300",
+        "imagen": "fallout_1.jpg",
+        "imagen_descripcion": "Portada de Fallout 1"
+    },
+    {
+        "articulo_id": 13,
+        "titulo": "Fallout 2",
+        "descripcion": "La secuela del clásico Fallout.",
+        "precio": "$2300",
+        "imagen": "fallout_2.jpg",
+        "imagen_descripcion": "Portada de Fallout 2"
+    },
+    {
+        "articulo_id": 14,
+        "titulo": "Fallout 3",
+        "descripcion": "Un RPG en un mundo abierto post-apocalíptico.",
+        "precio": "$2300",
+        "imagen": "fallout_3.jpg",
+        "imagen_descripcion": "Portada de Fallout 3"
+    },
+    {
+        "articulo_id": 15,
+        "titulo": "Fallout 4",
+        "descripcion": "La cuarta entrega de la serie Fallout.",
+        "precio": "$2300",
+        "imagen": "fallout_4.jpg",
+        "imagen_descripcion": "Portada de Fallout 4"
+    },
+    {
+        "articulo_id": 16,
+        "titulo": "Fallout: New Vegas",
+        "descripcion": "Una experiencia RPG en el desierto de Nevada.",
+        "precio": "$2300",
+        "imagen": "fallout_new_vegas.jpg",
+        "imagen_descripcion": "Portada de Fallout: New Vegas"
+    },
+    {
+        "articulo_id": 17,
+        "titulo": "The Elder Scrolls V: Skyrim",
+        "descripcion": "Un RPG de mundo abierto en un vasto universo.",
+        "precio": "$2300",
+        "imagen": "skyrim.jpg",
+        "imagen_descripcion": "Portada de Skyrim"
+    }
+]
