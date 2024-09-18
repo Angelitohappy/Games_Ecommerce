@@ -1,5 +1,7 @@
 <?php
 
+$ruta = $_GET['s'] ?? 'home';
+
 $listaRutas = [
     'home' => [
         'titulo' => 'TiendaTech',
@@ -8,16 +10,13 @@ $listaRutas = [
         'titulo' => 'Productos',
     ],
     'producto' => [
-        'titulo' => 'producto',
+        'titulo' => 'Producto',
     ],
     'formulario' => [
         'titulo' => 'Contacto',
     ],
     'datos_alumno' => [
         'titulo' => 'Datos del alumno',
-    ],
-    '404' => [
-        'titulo' => 'Error',
     ],
 ];
 
@@ -37,6 +36,29 @@ if (!isset($listaRutas[$ruta])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <?php
+        require __DIR__ . '/vistas/' . $ruta . '.php';
+    ?>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 TiendaTech</p>
+    </footer>
     
 </body>
 </html>
