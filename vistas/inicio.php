@@ -1,13 +1,13 @@
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="Imagenes/fromsoftware_nao_descarta_elden_ring_2_ou_expansoes__vm6nryw22.jpg" class="d-block w-100" alt="...">
+      <img src="Imagenes/Elden_dlc.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="Imagenes/skyrim.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="Imagenes/Red_dead_II.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

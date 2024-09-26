@@ -4,7 +4,7 @@
         "titulo": "Elden Ring",
         "descripcion": "",
         "precio": "$2300",
-        "imagen": "elden_ring.jpg",
+        "imagen": "Imagenes/Eldel-ring.png",
         "imagen_descripcion": "Foto de Elden Ring"
     },
     {
@@ -36,7 +36,7 @@
         "titulo": "Red Dead Redemption II",
         "descripcion": "Un juego de acción y aventura en un mundo abierto.",
         "precio": "$2300",
-        "imagen": "red_dead_redemption_ii.jpg",
+        "imagen": "Imagenes/Red_dead_II.png",
         "imagen_descripcion": "Portada de Red Dead Redemption II"
     },
     {
@@ -44,7 +44,7 @@
         "titulo": "BioShock I",
         "descripcion": "Un juego de disparos en primera persona en un mundo submarino.",
         "precio": "$2300",
-        "imagen": "bioshock_i.jpg",
+        "imagen": "Imagenes/bioshock.jpg",
         "imagen_descripcion": "Portada de BioShock I"
     },
     {
@@ -52,7 +52,7 @@
         "titulo": "BioShock II",
         "descripcion": "La secuela del aclamado BioShock.",
         "precio": "$2300",
-        "imagen": "bioshock_ii.jpg",
+        "imagen": "Imagenes/bioshock_2.jpg",
         "imagen_descripcion": "Portada de BioShock II"
     },
     {
@@ -60,7 +60,7 @@
         "titulo": "BioShock Infinite",
         "descripcion": "Un juego de disparos en primera persona ambientado en el cielo.",
         "precio": "$2300",
-        "imagen": "bioshock_infinite.jpg",
+        "imagen": "Imagenes/bioshock_infinite.png",
         "imagen_descripcion": "Portada de BioShock Infinite"
     },
     {
@@ -92,7 +92,7 @@
         "titulo": "Fallout 1",
         "descripcion": "Un RPG post-apocalíptico clásico.",
         "precio": "$2300",
-        "imagen": "fallout_1.jpg",
+        "imagen": "Imagenes/fallout_1.png",
         "imagen_descripcion": "Portada de Fallout 1"
     },
     {
@@ -100,7 +100,7 @@
         "titulo": "Fallout 2",
         "descripcion": "La secuela del clásico Fallout.",
         "precio": "$2300",
-        "imagen": "fallout_2.jpg",
+        "imagen": "Imagenes/fallout_2.png",
         "imagen_descripcion": "Portada de Fallout 2"
     },
     {
@@ -108,7 +108,7 @@
         "titulo": "Fallout 3",
         "descripcion": "Un RPG en un mundo abierto post-apocalíptico.",
         "precio": "$2300",
-        "imagen": "fallout_3.jpg",
+        "imagen": "Imagenes/fallout_3.png",
         "imagen_descripcion": "Portada de Fallout 3"
     },
     {
@@ -116,7 +116,7 @@
         "titulo": "Fallout 4",
         "descripcion": "La cuarta entrega de la serie Fallout.",
         "precio": "$2300",
-        "imagen": "fallout_4.jpg",
+        "imagen": "Imagenes/fallout_4.png",
         "imagen_descripcion": "Portada de Fallout 4"
     },
     {
@@ -124,7 +124,7 @@
         "titulo": "Fallout: New Vegas",
         "descripcion": "Una experiencia RPG en el desierto de Nevada.",
         "precio": "$2300",
-        "imagen": "fallout_new_vegas.jpg",
+        "imagen": "Imagenes/fallaout_New_vegas.png",
         "imagen_descripcion": "Portada de Fallout: New Vegas"
     },
     {
@@ -132,7 +132,7 @@
         "titulo": "The Elder Scrolls V: Skyrim",
         "descripcion": "Un RPG de mundo abierto en un vasto universo.",
         "precio": "$2300",
-        "imagen": "skyrim.jpg",
+        "imagen": "Imagenes/skyrim.png",
         "imagen_descripcion": "Portada de Skyrim"
     }
 ]
