@@ -45,7 +45,7 @@ if (!isset($listaRutas[$ruta])) {
 
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="index.php?s=inicio">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="index.php?s=inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?s=productos">Productos</a>
@@ -54,7 +54,7 @@ if (!isset($listaRutas[$ruta])) {
                     <a class="nav-link" href="index.php?s=formulario">Contacto</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="index.php?s=datos_alumno">Datos de creador</a>
+                    <a class="nav-link" href="index.php?s=datos_alumno">Datos de creador</a>
                 </li>
             </ul>
 
@@ -66,12 +66,12 @@ if (!isset($listaRutas[$ruta])) {
     require __DIR__ . '/vistas/' . $ruta . '.php';
     ?>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>&copy; 2024 TiendaTech</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+
 
 </body>
 
