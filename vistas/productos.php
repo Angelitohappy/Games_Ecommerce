@@ -1,29 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <style>
-        .pastilla {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 10px;
-            text-align: center;
-            display: inline-block;
-            width: 200px;
-        }
-
-        .pastilla img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-
-<body>
     <div id="productos">
         <?php
         require_once __DIR__ . '/../classes/articulos.php';
@@ -57,9 +31,7 @@
                 <h3><?php echo $articulo->titulo; ?></h3>
                 <p>Precio: <?php echo $articulo->precio; ?></p>
                 <p><?php echo $articulo->descripcion; ?></p>
+                <a href="index.php?s=producto&id=<?php echo $articulo->articulo_id; ?>" class="btn btn-primary">Ver más</a>
             </div>
         <?php endforeach; ?>
     </div>
-</body>
-
-</html>

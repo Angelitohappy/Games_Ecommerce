@@ -1,0 +1,14 @@
+.pastilla {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+}
+
+.pastilla img {
+    max-width: 100%;
+    height: auto;
+}
