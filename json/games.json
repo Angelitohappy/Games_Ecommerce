@@ -1,6 +1,7 @@
 [
     {
         "articulo_id": 1,
+        "categoria": "souls",
         "titulo": "Elden Ring",
         "descripcion": "",
         "precio": "$2300",
@@ -9,6 +10,7 @@
     },
     {
         "articulo_id": 2,
+        "categoria": "souls",
         "titulo": "Dark Souls I",
         "descripcion": "Un juego de rol de acción conocido por su dificultad.",
         "precio": "$2500",
@@ -18,6 +20,7 @@
     {
         "articulo_id": 3,
         "titulo": "Dark Souls II",
+        "categoria": "souls",
         "descripcion": "La secuela del aclamado Dark Souls.",
         "precio": "$2300",
         "imagen": "Imagenes/Dark_Souls2.png",
@@ -26,6 +29,7 @@
     {
         "articulo_id": 4,
         "titulo": "Dark Souls III",
+        "categoria": "souls",
         "descripcion": "La conclusión de la trilogía Dark Souls.",
         "precio": "$2300",
         "imagen": "Imagenes/Dark_Souls3.png",

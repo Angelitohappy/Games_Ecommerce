@@ -43,7 +43,7 @@ if (!isset($listaRutas[$ruta])) {
 
         <nav class="navegador">
 
-            <ul class="bg-dark nav justify-content-center">
+            <ul class="bg-dark nav justify-content-end">
                 <li class="nav-item">
                     <a class="text-white nav-link active" aria-current="page" href="index.php?s=inicio">Inicio</a>
                 </li>

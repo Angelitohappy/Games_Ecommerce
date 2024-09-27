@@ -31,10 +31,9 @@
                 return $articulo;
             }
         }
-        return null; // Devuelve null si no se encuentra el artículo
+        return null;
     }
 
-    // Obtener el ID del artículo desde la URL
     if (isset($_GET['id'])) {
         $id = (int)$_GET['id'];
         $articulo = obtenerArticulosPorId($id);

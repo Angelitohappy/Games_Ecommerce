@@ -3,6 +3,12 @@
     margin-bottom: 4%;
 }
 
+.Bienvenido {
+    margin: 50px;
+    padding: 2rem;
+    background-color: gray;
+}
+
 #productos {
     margin: 0 auto;
     width: 70%;
@@ -31,10 +37,15 @@
     height: auto;
 }
 
-#carouselExample {
+#carouselExampleAutoplaying {
     width: 90%;
     margin: auto;
 }
 
 /* tarjetas de datos */
 
+@media (max-width: 700px) {
+    #carouselExampleAutoplaying {
+        display: none;
+    }
+}
