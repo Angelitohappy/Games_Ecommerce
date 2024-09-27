@@ -4,7 +4,7 @@
         "titulo": "Elden Ring",
         "descripcion": "",
         "precio": "$2300",
-        "imagen": "Imagenes/Eldel-ring.png",
+        "imagen": "Imagenes/Eldel-ring_500.png",
         "imagen_descripcion": "Foto de Elden Ring"
     },
     {
@@ -12,7 +12,7 @@
         "titulo": "Dark Souls I",
         "descripcion": "Un juego de rol de acción conocido por su dificultad.",
         "precio": "$2500",
-        "imagen": "dark_souls_i.jpg",
+        "imagen": "Imagenes/Dark_Souls.png",
         "imagen_descripcion": "Portada de Dark Souls I"
     },
     {
@@ -20,7 +20,7 @@
         "titulo": "Dark Souls II",
         "descripcion": "La secuela del aclamado Dark Souls.",
         "precio": "$2300",
-        "imagen": "dark_souls_ii.jpg",
+        "imagen": "Imagenes/Dark_Souls2.png",
         "imagen_descripcion": "Portada de Dark Souls II"
     },
     {
@@ -28,7 +28,7 @@
         "titulo": "Dark Souls III",
         "descripcion": "La conclusión de la trilogía Dark Souls.",
         "precio": "$2300",
-        "imagen": "dark_souls_iii.jpg",
+        "imagen": "Imagenes/Dark_Souls3.png",
         "imagen_descripcion": "Portada de Dark Souls III"
     },
     {
@@ -36,7 +36,7 @@
         "titulo": "Red Dead Redemption II",
         "descripcion": "Un juego de acción y aventura en un mundo abierto.",
         "precio": "$2300",
-        "imagen": "Imagenes/Red_dead_II.png",
+        "imagen": "Imagenes/Red_dead_II_500.png",
         "imagen_descripcion": "Portada de Red Dead Redemption II"
     },
     {
@@ -44,7 +44,7 @@
         "titulo": "BioShock I",
         "descripcion": "Un juego de disparos en primera persona en un mundo submarino.",
         "precio": "$2300",
-        "imagen": "Imagenes/bioshock.jpg",
+        "imagen": "Imagenes/bioshock-1.png",
         "imagen_descripcion": "Portada de BioShock I"
     },
     {
@@ -52,7 +52,7 @@
         "titulo": "BioShock II",
         "descripcion": "La secuela del aclamado BioShock.",
         "precio": "$2300",
-        "imagen": "Imagenes/bioshock_2.jpg",
+        "imagen": "Imagenes/bioshock_2.png",
         "imagen_descripcion": "Portada de BioShock II"
     },
     {
@@ -60,7 +60,7 @@
         "titulo": "BioShock Infinite",
         "descripcion": "Un juego de disparos en primera persona ambientado en el cielo.",
         "precio": "$2300",
-        "imagen": "Imagenes/bioshock_infinite.png",
+        "imagen": "Imagenes/bioshock_infinite_500.png",
         "imagen_descripcion": "Portada de BioShock Infinite"
     },
     {
@@ -68,7 +68,7 @@
         "titulo": "Borderlands I",
         "descripcion": "Un juego de rol de disparos con estilo cel-shading.",
         "precio": "$2300",
-        "imagen": "borderlands_i.jpg",
+        "imagen": "Imagenes/Bordelands.png",
         "imagen_descripcion": "Portada de Borderlands I"
     },
     {
@@ -76,7 +76,7 @@
         "titulo": "Borderlands II",
         "descripcion": "La secuela de Borderlands con más acción y locura.",
         "precio": "$2300",
-        "imagen": "borderlands_ii.jpg",
+        "imagen": "Imagenes/Bordelands2.png",
         "imagen_descripcion": "Portada de Borderlands II"
     },
     {
@@ -84,7 +84,7 @@
         "titulo": "Borderlands: The Pre-Sequel",
         "descripcion": "Una historia entre Borderlands 1 y 2.",
         "precio": "$2300",
-        "imagen": "borderlands_pre_sequel.jpg",
+        "imagen": "Imagenes/Borderlands_The_Pre-Sequel.png",
         "imagen_descripcion": "Portada de Borderlands: The Pre-Sequel"
     },
     {
@@ -100,7 +100,7 @@
         "titulo": "Fallout 2",
         "descripcion": "La secuela del clásico Fallout.",
         "precio": "$2300",
-        "imagen": "Imagenes/fallout_2.png",
+        "imagen": "Imagenes/fallout-2.png",
         "imagen_descripcion": "Portada de Fallout 2"
     },
     {
