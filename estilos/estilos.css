@@ -10,9 +10,11 @@
 }
 
 #productos {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 70%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .pastilla {
@@ -28,7 +30,7 @@
 }
 
 .pastilla:hover {
-    transform: translate( 0.5px, -10px);
+    transform: translate(0.5px, -10px);
     box-shadow: 0px 0px 40px -20px;
 }
 
@@ -42,10 +44,9 @@
     margin: auto;
 }
 
-/* tarjetas de datos */
-
 @media (max-width: 700px) {
     #carouselExampleAutoplaying {
         display: none;
     }
 }
+
