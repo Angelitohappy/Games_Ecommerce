@@ -41,7 +41,7 @@ if (!isset($listaRutas[$ruta])) {
 
     <header>
 
-        <nav>
+        <nav class="navegador">
 
             <ul class="bg-dark nav justify-content-center">
                 <li class="nav-item">
@@ -76,8 +76,3 @@ if (!isset($listaRutas[$ruta])) {
 </body>
 
 </html>
-
-<?php
-$datos = array();
-
-?>

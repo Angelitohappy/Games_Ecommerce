@@ -1,26 +1,40 @@
-:root {
-    --size-height: 410px;
-    --size-width: 200;
+.navegador {
+    box-shadow: 0px 4px 10px 0px;
+    margin-bottom: 4%;
+}
+
+#productos {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
 }
 
 .pastilla {
     border: 1px solid #ccc;
     border-radius: 8px;
-
+    padding: 16px;
+    margin: 10px;
     text-align: center;
     display: inline-block;
     width: 200px;
     transition: transform 0.5s ease;
+
 }
 
 .pastilla:hover {
-    transform: translate(50px, 50px);
+    transform: translate( 0.5px, -10px);
+    box-shadow: 0px 0px 40px -20px;
 }
 
 .pastilla img {
+    max-width: 100%;
+    height: auto;
+}
 
 #carouselExample {
-    width: 100%;
-    height: 50%;
+    width: 90%;
+    margin: auto;
 }
-}
+
+/* tarjetas de datos */
+
