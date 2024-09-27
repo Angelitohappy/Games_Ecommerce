@@ -31,7 +31,7 @@
                 return $articulo;
             }
         }
-        return null;
+        return null; 
     }
 
     if (isset($_GET['id'])) {
@@ -39,10 +39,12 @@
         $articulo = obtenerArticulosPorId($id);
 
         if ($articulo): ?>
+        <div class="Juego_solo">
             <h2><?php echo $articulo->titulo; ?></h2>
             <img src="<?php echo $articulo->imagen; ?>" alt="<?php echo $articulo->imagen_descripcion; ?>">
-            <p>Precio: $<?php echo $articulo->precio; ?></p>
+            <p> <b> Precio: </b> <?php echo $articulo->precio; ?></p>
             <p><?php echo $articulo->descripcion; ?></p>
+        </div>
         <?php else: ?>
             <p>Artículo no encontrado.</p>
     <?php endif;

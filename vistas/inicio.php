@@ -22,12 +22,43 @@
   </button>
 </div>
 
+<div class="Bienvenido">
+    <h1> <em> TiendaTech </em>  </h1>
+    <p> Bienvenidos a la mejor tienda de productos tecnológicos.</p>
+</div>
+
+<div class="juegos">
+  <h2>  Juegos disponibles </h2>
+</div>
 
 
 <div class="contenedeor_articulos">
 
 <?php
         require_once __DIR__ . '/../classes/articulos.php';
+
+        function obtenerArticulos(): array
+        {
+            $rutaAlArchivo = __DIR__ . '/../json/games.json';
+            $registros = json_decode(file_get_contents($rutaAlArchivo), true);
+
+            $salida = [];
+
+            foreach ($registros as $registro) {
+                $articulo = new Articulo;
+                $articulo->articulo_id = $registro['articulo_id'];
+                $articulo->titulo = $registro['titulo'];
+                $articulo->descripcion = $registro['descripcion'];
+                $articulo->precio = $registro['precio'];
+                $articulo->imagen = $registro['imagen'];
+                $articulo->imagen_descripcion = $registro['imagen_descripcion'];
+
+                $salida[] = $articulo;
+            }
+            return $salida;
+        }
+
+        $articulos = obtenerArticulos();
 
 foreach ($articulos as $articulo): ?> 
         <div class="pastilla">

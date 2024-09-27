@@ -3,7 +3,7 @@
         "articulo_id": 1,
         "categoria": "souls",
         "titulo": "Elden Ring",
-        "descripcion": "",
+        "descripcion": "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment.",
         "precio": "$2300",
         "imagen": "Imagenes/Eldel-ring_500.png",
         "imagen_descripcion": "Foto de Elden Ring"
