@@ -43,18 +43,18 @@ if (!isset($listaRutas[$ruta])) {
 
         <nav>
 
-            <ul class="nav justify-content-center">
+            <ul class="bg-dark nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php?s=inicio">Inicio</a>
+                    <a class="text-white nav-link active" aria-current="page" href="index.php?s=inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?s=productos">Productos</a>
+                    <a class="text-white nav-link" href="index.php?s=productos">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?s=formulario">Contacto</a>
+                    <a class="text-white nav-link" href="index.php?s=formulario">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?s=datos_alumno">Datos de creador</a>
+                    <a class="text-white nav-link" href="index.php?s=datos_alumno">Datos de creador</a>
                 </li>
             </ul>
 
