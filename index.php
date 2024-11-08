@@ -18,6 +18,12 @@ $listaRutas = [
     'datos_alumno' => [
         'titulo' => 'Datos del alumno',
     ],
+    'inicio_sesion' => [
+        'titulo' => 'Inicio',
+    ],
+    'registrar_usuario' => [
+        'titulo' => 'Registrar',
+    ],
 ];
 
 if (!isset($listaRutas[$ruta])) {
@@ -55,6 +61,12 @@ if (!isset($listaRutas[$ruta])) {
                 </li>
                 <li class="nav-item">
                     <a class="text-white nav-link" href="index.php?s=datos_alumno">Datos de creador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white nav-link" href="index.php?s=inicio_sesion">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white nav-link" href="index.php?s=registrar_usuario">Registrarse</a>
                 </li>
             </ul>
 
