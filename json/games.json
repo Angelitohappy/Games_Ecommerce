@@ -1,7 +1,7 @@
 [
     {
         "articulo_id": 1,
-        "categoria": "souls",
+        "categoria": "soulslike",
         "titulo": "Elden Ring",
         "descripcion": "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment.",
         "precio": "$2300",
@@ -10,7 +10,7 @@
     },
     {
         "articulo_id": 2,
-        "categoria": "souls",
+        "categoria": "soulslike",
         "titulo": "Dark Souls I",
         "descripcion": "Un juego de rol de acción conocido por su dificultad.",
         "precio": "$2500",
@@ -20,7 +20,7 @@
     {
         "articulo_id": 3,
         "titulo": "Dark Souls II",
-        "categoria": "souls",
+        "categoria": "soulslike",
         "descripcion": "La secuela del aclamado Dark Souls.",
         "precio": "$2300",
         "imagen": "Imagenes/Dark_Souls2.png",
@@ -29,7 +29,7 @@
     {
         "articulo_id": 4,
         "titulo": "Dark Souls III",
-        "categoria": "souls",
+        "categoria": "soulslike",
         "descripcion": "La conclusión de la trilogía Dark Souls.",
         "precio": "$2300",
         "imagen": "Imagenes/Dark_Souls3.png",
@@ -38,6 +38,7 @@
     {
         "articulo_id": 5,
         "titulo": "Red Dead Redemption II",
+        "categoria": "Mundo abierto",
         "descripcion": "Un juego de acción y aventura en un mundo abierto.",
         "precio": "$2300",
         "imagen": "Imagenes/Red_dead_II_500.png",
@@ -46,6 +47,7 @@
     {
         "articulo_id": 6,
         "titulo": "BioShock I",
+        "categoria": "Shooter",
         "descripcion": "Un juego de disparos en primera persona en un mundo submarino.",
         "precio": "$2300",
         "imagen": "Imagenes/bioshock-1.png",
@@ -54,6 +56,7 @@
     {
         "articulo_id": 7,
         "titulo": "BioShock II",
+        "categoria": "Shooter",
         "descripcion": "La secuela del aclamado BioShock.",
         "precio": "$2300",
         "imagen": "Imagenes/bioshock_2.png",
@@ -62,6 +65,7 @@
     {
         "articulo_id": 8,
         "titulo": "BioShock Infinite",
+        "categoria": "soulslike",
         "descripcion": "Un juego de disparos en primera persona ambientado en el cielo.",
         "precio": "$2300",
         "imagen": "Imagenes/bioshock_infinite_500.png",
@@ -70,6 +74,7 @@
     {
         "articulo_id": 9,
         "titulo": "Borderlands I",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "Un juego de rol de disparos con estilo cel-shading.",
         "precio": "$2300",
         "imagen": "Imagenes/Bordelands.png",
@@ -78,6 +83,7 @@
     {
         "articulo_id": 10,
         "titulo": "Borderlands II",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "La secuela de Borderlands con más acción y locura.",
         "precio": "$2300",
         "imagen": "Imagenes/Bordelands2.png",
@@ -86,6 +92,7 @@
     {
         "articulo_id": 11,
         "titulo": "Borderlands: The Pre-Sequel",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "Una historia entre Borderlands 1 y 2.",
         "precio": "$2300",
         "imagen": "Imagenes/Borderlands_The_Pre-Sequel.png",
@@ -94,6 +101,7 @@
     {
         "articulo_id": 12,
         "titulo": "Fallout 1",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "Un RPG post-apocalíptico clásico.",
         "precio": "$2300",
         "imagen": "Imagenes/fallout_1.png",
@@ -102,6 +110,7 @@
     {
         "articulo_id": 13,
         "titulo": "Fallout 2",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "La secuela del clásico Fallout.",
         "precio": "$2300",
         "imagen": "Imagenes/fallout-2.png",
@@ -110,6 +119,7 @@
     {
         "articulo_id": 14,
         "titulo": "Fallout 3",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "Un RPG en un mundo abierto post-apocalíptico.",
         "precio": "$2300",
         "imagen": "Imagenes/fallout_3.png",
@@ -118,6 +128,7 @@
     {
         "articulo_id": 15,
         "titulo": "Fallout 4",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "La cuarta entrega de la serie Fallout.",
         "precio": "$2300",
         "imagen": "Imagenes/fallout_4.png",
@@ -126,6 +137,7 @@
     {
         "articulo_id": 16,
         "titulo": "Fallout: New Vegas",
+        "categoria": "Shooter a Mundo abierto",
         "descripcion": "Una experiencia RPG en el desierto de Nevada.",
         "precio": "$2300",
         "imagen": "Imagenes/fallout_New_vegas.png",
@@ -134,6 +146,7 @@
     {
         "articulo_id": 17,
         "titulo": "The Elder Scrolls V: Skyrim",
+        "categoria": "RPG a mundo abierto",
         "descripcion": "Un RPG de mundo abierto en un vasto universo.",
         "precio": "$2300",
         "imagen": "Imagenes/skyrim.png",
