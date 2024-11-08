@@ -15,10 +15,10 @@ class Conexion
         }
     }
 
-    public function crearUsuario($nombre, $email)
+    public function crearUsuario($email, $contraseña, $nombre)
     {
-        $stmt = $this->conn->prepare("INSERT INTO usuarios (nombre, email) VALUES (?, ?)");
-        $stmt->bind_param("ss", $nombre, $email);
+        $stmt = $this->conn->prepare("INSERT INTO usuarios (email, password, name) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $email, $contraseña, $nombre);
         return $stmt->execute();
     }
 
@@ -26,6 +26,27 @@ class Conexion
     {
         $result = $this->conn->query("SELECT * FROM usuarios");
         return $result->fetch_all(MYSQLI_ASSOC);
+    }
+
+    public function validarUsuario($email, $contraseña)
+    {
+        $stmt = $this->conn->prepare("SELECT password FROM users WHERE email=?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->bind_result($contraseña_hash);
+        $stmt->fetch();
+
+        $stmt = $this->conn->prepare("SELECT email FROM users WHERE password=?");
+        $stmt->bind_param("s", $contraseña);
+        $stmt->execute();
+        $stmt->bind_result($user_email);
+        $stmt->fetch();
+
+        if ($contraseña_hash && password_verify($contraseña, $contraseña_hash) && $user_email) {
+            return true; // Usuario validado
+        } else {
+            return false; // Validación fallida
+        }
     }
 
     public function actualizarUsuario($id, $nombre, $email)
@@ -48,17 +69,8 @@ class Conexion
     }
 }
 
-
-require 'conexion.php';
-
 $conexion = new Conexion();
 
-// Crear usuario
-if (isset($_POST['crear'])) {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $conexion->crearUsuario($nombre, $email);
-}
 
 // Leer usuarios
 $usuarios = $conexion->obtenerUsuarios();

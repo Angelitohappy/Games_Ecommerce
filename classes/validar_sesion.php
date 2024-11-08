@@ -1,5 +1,12 @@
 <?php
 require 'conexion.php';
 
-// Leer usuarios
-$usuarios = $conexion->obtenerUsuarios();
+
+$email = $_POST['email'];
+$contraseña = $_POST['contraseña'];
+
+if ($conexion->validarUsuario($email, $contraseña)) {
+    header("location:");
+} else {
+    header("location:");
+}
