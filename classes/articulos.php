@@ -1,35 +1,33 @@
 <?php
 
-require_once "conexion.php";
+require_once 'conexion.php';
 
     Class Articulo {
 
 
         //Propiedades
         private $pdo;
-        private $table = "products",
+        private $table = "products";
         
 
         //Contructor
-        public function__contruct()
+        public function __contruct()
         {
-            $db = new Nombre_bd();
-            $this->pdo = $db;
+            $db = new Database();
+            $this->pdo = $db->getConnection();
         } 
 
         //Metodos
 
         public function obtenerTodos(){
-            $consulta ? $this->pdo->prepare("SELECT * FROM " . $this->table);
+            $consulta = $this->pdo->prepare("SELECT * FROM " . $this->table);
+
+            $consulta->execute();
+
+            $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+            return $resultado;
         }
-
-        $declaracion->execute();
-
-        $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
-
-        return $resultado
-
-
 
     }
         
