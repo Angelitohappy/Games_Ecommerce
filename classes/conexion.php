@@ -1,30 +1,38 @@
 <?php
 
-class Conexion {
+class Conexion
+{
 
     //Propiedades
-    private $host = 'localhost';
-    private $usuario = 'root';
-    private $contraseña = '';
-    private $nombre_bd = 'game_ecommerce';
-    private $enlace;
+    private const host = 'localhost';
+    private const usuario = 'root';
+    private const contraseña = '';
+    private const nombre_bd = 'game_ecommerce';
+    private const enlace = 'mysql:host=' . self::host . '
+    ; dbname=' . self::nombre_bd . ';charset=utf8mb4';
 
-    //Contructor
+    private static ?PDO $db = null;
 
-    public function __construct() {
-        
+    public static function conectar()
+    {
+
         try {
-            $this->enlace = new PDO("mysql:host=$this->$host;dbname=this->$nombre_bd", $this->$usuario, $this->$contraseña);
-            $this->enlace->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo ("TODO OK");
-        } catch (PDOException $error) {
-            die("Error de conexion" . $error->getMessage());
+            self::$db = new PDO(self::enlace, self::usuario, self::contraseña);
+            // echo "<p>Acabo de crear una conexion para poder traer datos! =D</p>";
+        } catch (Exception $e) {
+            die('Error al conectar con MySQL.');
         }
     }
 
-    //metodos
-
-    public function getConnection(){
-        return $this->pdo;
+    /**
+     * Función que devuelve una conexión PDO lista para usar
+     * @return PDO
+     */
+    public static function getConexion(): PDO
+    {
+        if (self::$db === null) {
+            self::conectar();
+        }
+        return self::$db;
     }
 }
