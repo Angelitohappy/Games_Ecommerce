@@ -1,4 +1,9 @@
     <?php
+
+    $id = $_GET['id'] ?? FALSE;
+
+    $game = Articulo::getArticulo_x_id($id);
+
     require_once __DIR__ . '/../classes/articulos.php';
 
     function obtenerArticulos(): array
@@ -31,7 +36,7 @@
                 return $articulo;
             }
         }
-        return null; 
+        return null;
     }
 
     if (isset($_GET['id'])) {
@@ -39,12 +44,12 @@
         $articulo = obtenerArticulosPorId($id);
 
         if ($articulo): ?>
-        <div class="Juego_solo">
-            <h2><?php echo $articulo->titulo; ?></h2>
-            <img src="<?php echo $articulo->imagen; ?>" alt="<?php echo $articulo->imagen_descripcion; ?>">
-            <p> <b> Precio: </b> <?php echo $articulo->precio; ?></p>
-            <p><?php echo $articulo->descripcion; ?></p>
-        </div>
+            <div class="Juego_solo">
+                <h2><?php echo $articulo->titulo; ?></h2>
+                <img src="<?php echo $articulo->imagen; ?>" alt="<?php echo $articulo->imagen_descripcion; ?>">
+                <p> <b> Precio: </b> <?php echo $articulo->precio; ?></p>
+                <p><?php echo $articulo->descripcion; ?></p>
+            </div>
         <?php else: ?>
             <p>Artículo no encontrado.</p>
     <?php endif;
