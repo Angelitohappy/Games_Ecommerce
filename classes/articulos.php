@@ -34,7 +34,7 @@ class Articulo
      * Devuelve los datos de un articulo en particular
      * @param int $id El ID único de los articulos 
      */
-    public static function get_x_id(int $id): ?Articulo
+    public static function getArticulo_x_id(int $id): ?Articulo
     {
         $conexion = Conexion::getConexion();
         $query = "SELECT * FROM products WHERE id = $id";
