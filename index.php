@@ -66,7 +66,7 @@ if (!isset($listaRutas[$ruta])) {
                     <a class="text-white nav-link" href="index.php?s=inicio_sesion">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="text-white nav-link" href="index.php?s=registrar_usuario">Registrarse</a>
+                    <a class="text-white nav-link" href="admin/index.php">Registrarse</a>
                 </li>
             </ul>
 
