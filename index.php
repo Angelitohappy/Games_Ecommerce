@@ -78,7 +78,7 @@ if (!isset($listaRutas[$ruta])) {
     require __DIR__ . '/vistas/' . $ruta . '.php';
     ?>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4">
+    <footer class="bg-dark text-white text-center py-3 mt-4 fixed-bottom">
         <p>&copy; 2024 TiendaTech</p>
     </footer>
 
