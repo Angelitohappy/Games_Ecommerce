@@ -22,6 +22,10 @@ class Articulo
     {
         require '../vistas/productos.php';
     }
+    public function vista_producto()
+    {
+        require '../vistas/producto.php';
+    }
 
     public function obtenerArticulos()
     {
