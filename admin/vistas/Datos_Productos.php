@@ -14,9 +14,12 @@
   <thead>
     <tr>
       <th scope="col">id</th>
+      <th scope="col">Categoria</th>
       <th scope="col">Nombre</th>
       <th scope="col">Descripcion</th>
       <th scope="col">Precio</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Cantidad</th>
     </tr>
   </thead>
   <tbody>
@@ -34,9 +37,12 @@ foreach ($resultado as $articulo):
 
     <tr>
       <th scope="row"> <?php echo $articulo['articulo_id']; ?> </th>
+      <td> <?php echo $articulo['categoria']; ?> </td>
       <td> <?php echo $articulo['titulo']; ?> </td>
       <td> <?php echo $articulo['descripcion']; ?> </td>
       <td> <?php echo $articulo['precio']; ?> </td>
+      <td> <img style="width: 200px;" src="data:image/jpg;base64", <?php echo $articulo['imagen']; ?>  alt="<?php echo $articulo['imagen_descripcion']; ?> "> </td>
+      <td> <?php echo $articulo['cantidad']; ?> </td>
       <td>
         <a href="" class="btn btn-warning">Editar</a>
         <a href="" class="btn btn-danger">Eliminar</a>
