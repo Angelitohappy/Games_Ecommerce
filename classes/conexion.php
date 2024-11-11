@@ -14,7 +14,6 @@ class Database
         try {
             $this->enlace = new PDO("mysql:host=localhost;dbname=game_ecommerce", 'root', '');
             $this->enlace->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo ("TODO OK");
         } catch (PDOException $error) {
             die("Error de conexion" . $error->getMessage());
         }

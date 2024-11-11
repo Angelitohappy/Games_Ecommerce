@@ -18,7 +18,8 @@ class Articulo
 
     //Metodos
 
-    public function vista_productos() {
+    public function vista_productos()
+    {
         require '../vistas/productos.php';
     }
 
