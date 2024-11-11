@@ -1,17 +1,19 @@
 <?php
 
-class Conexion
+class Database
 {
 
     //Propiedades
-    private static ?PDO $db = null;
+    private $enlace;
+
     //Contructor
 
-    public static function conectar()
+    public function __construct()
     {
 
         try {
-            self::$db = new PDO('mysql:host=localhost; dbname=game_commerce', 'root', '');
+            $this->enlace = new PDO("mysql:host=localhost;dbname=game_ecommerce", 'root', '');
+            $this->enlace->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo ("TODO OK");
         } catch (PDOException $error) {
             die("Error de conexion" . $error->getMessage());
@@ -19,15 +21,9 @@ class Conexion
     }
 
     //metodos
-    /**
-     * Función que devuelve una conexión PDO lista para usar
-     * @return PDO
-     */
-    public static function getConexion(): PDO
+
+    public function getConnection()
     {
-        if (self::$db === null) {
-            self::conectar();
-        }
-        return self::$db;
+        return $this->enlace;
     }
 }
