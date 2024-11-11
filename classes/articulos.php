@@ -7,40 +7,15 @@ class Articulo
 
     //Propiedades
     private $id;
-    private $nombre;
     private $categoria;
+    private $titulo;
+    private $descripcion;
     private $precio;
-    private $cantidad;
     private $imagen;
+    private $imagen_descripcion;
+    private $cantidad;
 
-
-        //Propiedades
-        private $pdo;
-        private $table = "products";
-        
-
-        //Contructor
-        public function __contruct()
-        {
-            $db = new Database();
-            $this->pdo = $db->getConnection();
-        } 
-
-        //Metodos
-
-        public function obtenerTodos(){
-            $consulta = $this->pdo->prepare("SELECT * FROM " . $this->table);
-
-            $consulta->execute();
-
-            $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
-
-            return $resultado;
-        }
-
-    /**
-     * Devuelve el listado completo de los articulos en sistema
-     */
+    //Metodos
     public static function lista_completa(): array
     {
         $conexion = Conexion::getConexion();
@@ -75,56 +50,55 @@ class Articulo
 
     /**
      * Inserta un nuevo personaje a la base de datos
-     * @param string $nombre
      * @param string $categoria
-     * @param float $precio 
+     * @param string $titulo
+     * @param string $descripcion
+     * @param float $precio
+     * @param string $imagen
+     * @param string $imagen_descripcion
      * @param int $cantidad
-     * @param string $imagen ruta a un archivo .jpg o .png 
      */
-    public static function insert(string $nombre, string $categoria, float $precio, int $cantidad,  string $imagen)
+    public static function insert(string $categoria, string $titulo, string $descripcion, float $precio, string $imagen, string $imagen_descripcion, int $cantidad)
     {
         $conexion = Conexion::getConexion();
-        $query = "INSERT INTO personajes (`nombre`, `categoria`, `precio`, `cantidad`, `imagen`) VALUES (:nombre, :categoria, :precio, :cantidad, :imagen)";
+        $query = "INSERT INTO personajes (`categoria`, `titulo`, `descripcion`, `precio`, `imagen`, `imagen_descripcion` `cantidad`) VALUES (:categoria, :titula, :descripcion, :precio, :imagen, :imagen_descripcion, :cantidad)";
 
         echo "El query es:" .     $query;
 
         $PDOStatement = $conexion->prepare($query);
         $PDOStatement->execute(
             [
-                'nombre' => $nombre,
+
                 'categoria' => $categoria,
+                'titulo' => $titulo,
+                'descripcion' => $descripcion,
                 'precio' => $precio,
+                'imagen' => $imagen,
+                'imagen_descripcion' => $imagen_descripcion,
                 'cantidad' => $cantidad,
-                'imagen' => $imagen
+
             ]
         );
     }
 
-
-    /**
-     * Edita un Articulo en base de datos
-     * @param string $nombre
-     * @param string $categoria
-     * @param float $precio 
-     * @param int $cantidad
-     * @param string $imagen ruta a un archivo .jpg o .png 
-     */
-    public function edit($nombre, $categoria, $precio, $cantidad, $imagen)
+    public function edit($categoria, $titulo, $descripcion, $precio, $imagen, $imagen_descripcion, $cantidad)
     {
 
         $conexion = Conexion::getConexion();
         $query = "
         UPDATE personajes 
-        SET nombre = :nombre, categoria = :categoria, precio = :precio, cantidad = :cantidad, imagen = :imagen 
+        SET categoria = :categoria, titulo = :titulo, descripcion= :descripcion, precio = :precio, imagen = :imagen, imagen_descripcion = :imagen_descripcion, cantidad = :cantidad
         WHERE id = :id";
 
         $PDOStatement = $conexion->prepare($query);
         $PDOStatement->execute([
-            'nombre' => $nombre,
             'categoria' => $categoria,
+            'titulo' => $titulo,
+            'descripcion' => $descripcion,
             'precio' => $precio,
-            'cantidad' => $cantidad,
             'imagen' => $imagen,
+            'imagen_descripcion' => $imagen_descripcion,
+            'cantidad' => $cantidad,
             'id' => $this->id
         ]);
     }
@@ -142,45 +116,44 @@ class Articulo
         $PDOStatement->execute([$this->id]);
     }
 
-    /**
-     * Get the value of id
-     */
+
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * Get the value of nombre
-     */
-    public function getNombre()
-    {
-        return $this->nombre;
-    }
-
-    /**
-     * Get the value of historia
-     */
     public function getCategoria()
     {
         return $this->categoria;
     }
 
-    /**
-     * Get the value of historia
-     */
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
+
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
     public function getPrice()
     {
         return $this->precio;
     }
 
-    public function getCantidad()
-    {
-        return $this->cantidad;
-    }
-
     public function getImagen()
     {
         return $this->imagen;
+    }
+
+    public function getImagen_descripcion()
+    {
+        return $this->imagen_descripcion;
+    }
+
+    public function getCantidad()
+    {
+        return $this->cantidad;
     }
 }
