@@ -17,6 +17,11 @@ class Articulo
     }
 
     //Metodos
+
+    public function vista_productos() {
+        require '../vistas/productos.php';
+    }
+
     public function obtenerArticulos()
     {
         $consulta = $this->pdo->prepare("SELECT * FROM " . $this->table);
