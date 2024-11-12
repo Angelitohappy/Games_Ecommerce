@@ -34,7 +34,7 @@ foreach ($resultado as $articulo):
       <td> <img style="width: 200px;" src="data:image/jpg;base64", <?php echo $articulo['imagen']; ?>  alt="<?php echo $articulo['imagen_descripcion']; ?> "> </td>
       <td> <?php echo $articulo['cantidad']; ?> </td>
       <td>
-        <a href="" class="btn btn-warning">Editar</a>
+        <a href="index.php?s=Editar_Productos&id=<?php echo $articulo['articulo_id']?>" class="btn btn-warning">Editar</a>
         <a href="" class="btn btn-danger">Eliminar</a>
       </td>
     </tr>

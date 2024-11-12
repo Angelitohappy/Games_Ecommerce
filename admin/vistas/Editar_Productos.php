@@ -1,7 +1,4 @@
 
-
-
-
 <form action="../acciones/agregar.php" method="POST">
   <div class="mb-3">
     <label for="Categoria" class="form-label">Nombre de la categoria</label>
