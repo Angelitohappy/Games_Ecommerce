@@ -21,8 +21,6 @@ class Database
 
     //metodos
 
-    
-
     public function getConnection()
     {
         return $this->enlace;
