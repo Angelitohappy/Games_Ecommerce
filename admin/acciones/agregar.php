@@ -2,8 +2,7 @@
 
 include 'conexion.php';
 
-if($_SERVER['REQUEST_METHOD'] === "POST")
-
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $categoria = $_POST['Categoria'];
     $nombre = $_POST['Nombre'];
     $precio = $_POST['Precio'];
@@ -20,10 +19,9 @@ if($_SERVER['REQUEST_METHOD'] === "POST")
     $resultado->bindParam(":DescripcionImg", $descripcionImg);
     $resultado->bindParam(":Cantidad", $cantidad);
 
-    if ($resultado->execute()){
+    if ($resultado->execute()) {
         header('location: ../vistas/datos.php');
     } else {
         echo "error";
     }
-
-?>
+}

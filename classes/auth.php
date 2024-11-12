@@ -12,7 +12,7 @@ class Auth
 
     public function login($username, $password)
     {
-        $sql = "SELECT * FROM usuarios WHERE username = :username";
+        $sql = "SELECT * FROM users WHERE username = :username";
         $stmt = $this->db->prepare($sql);
         $stmt->bindParam(':username', $username);
         $stmt->execute();
