@@ -9,10 +9,10 @@ $listaRutas = [
     'datos' => [
         'titulo' => 'Productos',
     ],
-    'Agregar_Productos' => [
+    'agregar' => [
         'titulo' => 'Agregar',
     ],
-    'Editar_Productos' => [
+    'editar' => [
         'titulo' => 'Editar',
     ],
 ];
@@ -46,18 +46,6 @@ if (!isset($listaRutas[$ruta])) {
                 </li>
                 <li class="nav-item">
                     <a class="text-white nav-link" href="index.php?s=datos">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-white nav-link" href="index.php?s=formulario">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-white nav-link" href="index.php?s=datos_alumno">Datos de creador</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-white nav-link" href="index.php?s=inicio_sesion">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-white nav-link" href="index.php?s=registrar_usuario">Registrarse</a>
                 </li>
             </ul>
 
