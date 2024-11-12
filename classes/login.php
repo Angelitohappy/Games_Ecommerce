@@ -14,6 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: perfil.php");
         exit();
     } else {
-        echo "Credenciales incorrectas.";
+        echo "Error: Credenciales incorrectas.";
     }
 }

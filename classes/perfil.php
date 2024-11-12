@@ -5,7 +5,7 @@ require 'Auth.php';
 $auth = new Auth();
 
 if (!$auth->isLoggedIn()) {
-    echo "Usuario o contraseña invalidos!";
+    echo "Error: Usuario o contraseña invalidos!";
     header("Location: ../index.php");
     exit();
 }

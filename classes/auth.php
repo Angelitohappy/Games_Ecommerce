@@ -23,10 +23,16 @@ class Auth
                 $_SESSION['usuario'] = $username;
                 $_SESSION['role'] = $fila['role']; // Guardar el rol en la sesión
                 return true;
+            } else {
+                echo "Error: La contraseña no es válida.";
+                return false;
             }
+        } else {
+            echo "Error: El usuario no existe.";
+            return false;
         }
-        return false;
     }
+
 
     public function isLoggedIn()
     {
@@ -35,7 +41,7 @@ class Auth
 
     public function isAdmin()
     {
-        return isset($_SESSION['role']) && $_SESSION['role'] === 'admin'; // Verificar si es admin
+        return isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
     }
 
     public function logout()
