@@ -6,7 +6,7 @@ $listaRutas = [
     'dashboard' => [
         'titulo' => 'TiendaTech',
     ],
-    'Datos_Productos' => [
+    'datos' => [
         'titulo' => 'Productos',
     ],
     'Agregar_Productos' => [
@@ -45,7 +45,7 @@ if (!isset($listaRutas[$ruta])) {
                     <a class="text-white nav-link active" aria-current="page" href="index.php?s=TiendaTech">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="text-white nav-link" href="vistas/Datos_Productos.php">Productos</a>
+                    <a class="text-white nav-link" href="index.php?s=datos">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="text-white nav-link" href="index.php?s=formulario">Contacto</a>
@@ -69,7 +69,7 @@ if (!isset($listaRutas[$ruta])) {
         require __DIR__ . '/vistas/' . $ruta . '.php';
     ?>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4 fixed-bottom">
+    <footer class="bg-dark text-white text-center py-3 mt-4 position-static">
         <p>&copy; 2024 TiendaTech</p>
     </footer>
 

@@ -82,7 +82,7 @@ if (!isset($listaRutas[$ruta])) {
         
     ?>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4 fixed-bottom">
+    <footer class="bg-dark text-white text-center py-3 mt-4 position-static">
         <p>&copy; 2024 TiendaTech</p>
     </footer>
 

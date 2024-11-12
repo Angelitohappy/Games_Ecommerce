@@ -2,23 +2,6 @@
 
 include 'conexion.php';
 
-
-// $ArticuloCategoria = $_POST['Categoria'];
-// $ArticuloNombre = $_POST['Nombre'];
-// $ArticuloDescripcion = $_POST['Descripcion'];
-// $ArticuloImgDescripcion = $_POST['DescipcionImg'];
-// $ArticuloCantidad = $_POST['Cantidad'];
-
-// $sql = "INSERT INTO products (categoria, titulo, descripcion, precio, imagen_descripcion, cantidad) VALUE ('$ArticuloCategoria, $ArticuloNombre, $ArticuloDescripcion, $ArticuloImgDescripcion, $ArticuloCantidad')";
-
-// $resultado = $conexion -> query($sql);
-
-// if ($resultado) {
-//     header('Location: index.php');
-// } else {
-//     echo "No funciona"; 
-// }
-
 if($_SERVER['REQUEST_METHOD'] === "POST")
 
     $categoria = $_POST['Categoria'];
@@ -38,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST")
     $resultado->bindParam(":Cantidad", $cantidad);
 
     if ($resultado->execute()){
-        header('location: ../vistas/Datos_Productos.php');
+        header('location: ../vistas/datos.php');
     } else {
         echo "error";
     }
